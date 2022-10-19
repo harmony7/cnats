@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fastly-serve": "next build && cd compute-js && fastly compute serve --verbose",
+    "fastly-publish": "next build && cd compute-js && fastly compute publish --verbose"
   },
   "dependencies": {
     "next": "12.3.0",
